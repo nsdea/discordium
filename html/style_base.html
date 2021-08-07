@@ -19,7 +19,7 @@ body {
 }
 
 .text_input {
-    width: 20%
+    width: 80%
 }
 
 /* .submit_button {
@@ -38,22 +38,56 @@ input, select {
     background-color: #282e6b;
 }
 
+h4 {
+   color: #5865F2;
+}
+
+#wrapper{
+  display:flex;
+  justify-content:space-between;
+}
+
+#left {
+    float: left;
+}
+
+#right {
+    float: right;
+    margin-right: 20%;
+}
+
 </style>
 </head>
 
 <body>
 
-    <!-- %CODE% -->
+<div id="wrapper">
 
-    <form action="" method="POST">
-        <p>Message&nbsp;&nbsp;<input type="text" name="message" placeholder="Message text here" class="text_input"/></p>
-        <br>
-        <label for="channel">Channel&nbsp;&nbsp;</label>    
-            <select name="channel" id="channel">
-                <!-- %CHANNEL_DROPDOWN% -->
-            </select>
-        <br><br>
-        <input type="submit" value="Send", class="submit_button">
-    </form>
+    <div id="left">
+
+        <!-- %CODE% -->
+
+        <form action="" method="POST">
+            <p>Message&nbsp;&nbsp;<input type="text" name="message" placeholder="Message text here" class="text_input"/></p>
+            <br>
+            <label for="channel">Channel&nbsp;&nbsp;</label>    
+                <select name="channel" id="channel">
+                    <!-- %CHANNEL_DROPDOWN% -->
+                </select>
+            <br><br>
+            <input type="submit" value="Send", class="submit_button">
+        </form>
+    
+    </div>
+
+    <div id="right">
+
+        <ul>
+            <!-- %CHAT% -->       
+        </ul>
+
+    </div>
+
+</div>
 
 </body>
